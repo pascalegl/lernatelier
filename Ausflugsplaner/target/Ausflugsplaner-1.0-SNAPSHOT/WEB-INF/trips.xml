@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<trips>
+    <trip>
+        <name>Kegeln</name>
+        <days>whole-week</days>
+        <schoolOrHolydays>both</schoolOrHolydays>
+        <time>evening</time>
+        <kids>yes</kids>
+    </trip>
+    <trip>
+        <name>Freibad</name>
+        <days>whole-week</days>
+        <schoolOrHolydays>both</schoolOrHolydays>
+        <time>day</time>
+        <kids>yes</kids>
+    </trip>
+    <trip>
+        <name>Hallenbad</name>
+        <days>week</days>
+        <schoolOrHolydays>school</schoolOrHolydays>
+        <time>both</time>
+        <kids>yes</kids>
+    </trip>
+      <trip>
+        <name>Wandern</name>
+        <days>whole-week</days>
+        <schoolOrHolydays>both</schoolOrHolydays>
+        <time>day</time>
+        <kids>yes</kids>
+    </trip>
+</trips>

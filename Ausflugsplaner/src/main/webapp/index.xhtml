@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Lernatelier Ausflugsplaner</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p>Wann hast du Zeit?</p>
+            <h:selectOneRadio value="#{daytrips.weekday}">
+                <f:selectItem itemValue="true" itemLabel="Durch die Woche" />
+                <f:selectItem itemValue="false" itemLabel="An Wochenenden" />
+            </h:selectOneRadio>
+
+            <p>Am Tag oder am Abend?</p>
+            <h:selectOneRadio value="#{daytrips.duringDay}">
+                <f:selectItem itemValue="true" itemLabel="Am Tag" />
+                <f:selectItem itemValue="false" itemLabel="Am Abend" />
+            </h:selectOneRadio>
+
+            <p>Wann planst du den Ausflug zu machen?</p>
+            <h:selectOneRadio value="#{daytrips.duringHoliday}">
+                <f:selectItem itemValue="true" itemLabel="In den Schulferien" />
+                <f:selectItem itemValue="false" itemLabel="In der Schulzeit" />
+            </h:selectOneRadio>
+
+            <p>Wie ist es mit dem Wetter?</p>
+            <h:selectOneRadio value="#{daytrips.niceWeather}">
+                <f:selectItem itemValue="true" itemLabel="Nur schönes Wetter" />
+                <f:selectItem itemValue="false" itemLabel="Nur schelchtes Wetter" />
+            </h:selectOneRadio>
+
+            <p>Mit Kindern?</p>
+            <h:selectOneRadio value="#{daytrips.kids}">
+                <f:selectItem itemValue="true" itemLabel="Mit Kindern" />
+                <f:selectItem itemValue="false" itemLabel="Ohne Kinder" />
+            </h:selectOneRadio>
+            <h:commandButton action="#{daytrips.getTrips}" value="Suchen"/>
+        </h:form>
+        
+        <br/>
+        <p>Alle Ausflüge:</p>
+        <p>
+            <h:outputText value = "Kegeln: #{daytrips.bowling}"/><br/>
+            <h:outputText value = "Freibad: #{daytrips.outPool}"/><br/>
+            <h:outputText value = "Hallenbad: #{daytrips.inPool}"/><br/>
+            <h:outputText value = "Ausflug in den Dunkelwald: #{daytrips.darkforest}"/><br/>
+            <h:outputText value = "Musik: #{daytrips.music}"/><br/>
+            <h:outputText value = "Kurs für Brotbacken: #{daytrips.breatBaking}"/><br/>
+            <h:outputText value = "Erkundung des Schieferbergwerks: #{daytrips.mine}"/><br/>
+            <h:outputText value = "GO Kurse: #{daytrips.goCourses}"/><br/>
+            <h:outputText value = "Billard: #{daytrips.billard}"/><br/>
+            <h:outputText value = "Rennauto fahren: #{daytrips.racing}"/>
+        </p>
+    </h:body>
+</html>
+
